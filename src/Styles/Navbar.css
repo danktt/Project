@@ -1,0 +1,77 @@
+
+
+
+
+/********* CONTAINER *********/
+#container{
+ 
+  padding: 0 .6rem;
+  /* height: 3.5rem; */
+  /* position: fixed; */
+  z-index: 0;
+  background: #17c3b2;
+}
+#container > a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+}
+#container > a > img {
+  margin-right: 1rem;
+}
+
+/********** NAVTAG **********/
+#navbarNavDropdown > ul{
+  display: flex;
+
+  align-items: center;
+}
+.navbar-brand > img {
+  font-size: 3rem;
+  
+}
+
+.navbar-nav{
+  margin-left: auto;
+}
+
+
+
+/********** DROPDOWN **********/
+
+#navbarDropdownMenuLink{
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+
+
+#navbarDropdownMenuLink > span{
+  /* display: flex;
+  flex-direction: column; */
+  font-size: .7rem;
+  color: #fff;
+
+
+}
+#navbarDropdownMenuLink > p {
+  margin-bottom: 0;
+}
+
+
+.dropdown-item > svg {
+  margin-right: .4rem;
+  font-size: 1.3rem;
+}
+
+
+/********** ICONS **********/
+#icon{
+  font-size: 1.5rem;
+
+}
