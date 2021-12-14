@@ -4,7 +4,7 @@ import Sidebar from '../../Components/Sidebar';
 import  Logo  from '../../assets/logo-helpdesk.png'; 
 import Navbar from '../../Components/Navbar';
 
-import '../../Styles/GlobalStyles.scss';
+import '../../Styles/GlobalStyles.css';
 
 function HelpDesk() {
 

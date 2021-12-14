@@ -1,25 +1,25 @@
-import  Logo  from '../../assets/logo-guarda.png';
+import  Logo  from '../../assets/logo-arranchamento.png';
 
 import Sidebar from "../../Components/Sidebar";
 import Navbar from "../../Components/Navbar";
 
 import '../../Styles/GlobalStyles.css';
 
-function Guarda() {
+function Arranchamento() {
   return ( 
     <>
     <div className="wrapper">
         <Sidebar 
-          title="Guarda"
+          title="Arranchamento"
           icon={Logo}
         />
           <main>
             <Navbar />
-            <h1>Guarda</h1>
+            <h1>Arranchamento</h1>
           </main>
     </div>
   </>
    );
 }
 
-export default Guarda;
+export default Arranchamento;
