@@ -6,7 +6,10 @@ import Navbar from '../../Components/Navbar';
 
 import '../../Styles/GlobalStyles.css';
 
+
 function HelpDesk() {
+
+  
 
   return (
     <>
@@ -15,9 +18,10 @@ function HelpDesk() {
           title="HelpDesk"
           icon={Logo}
         />
-          <main>
+          <main >
             <Navbar />
-            <h1>FOI</h1>
+            <h1>HelpDesk</h1>
+            
           </main>
     </div>
   </>

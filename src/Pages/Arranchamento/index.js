@@ -1,5 +1,5 @@
-import  Logo  from '../../assets/logo-arranchamento.png';
-import Template from '../../Components/Template';
+// import  Logo  from '../../assets/logo-arranchamento.png';
+// import Template from '../../Components/Template';
 
 import '../../Styles/GlobalStyles.css';
 
@@ -8,13 +8,13 @@ import '../../Styles/GlobalStyles.css';
 function Arranchamento() {
   return ( 
     <>
-    <Template 
+    {/* <Template 
       title="Arranchamento"
       icon={Logo}
       children={
           <h1>teste</h1>
-      }
-    />
+      } */}
+    {/* /> */}
   </>
    );
 }

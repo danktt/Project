@@ -6,6 +6,10 @@ import Navbar from "../../Components/Navbar";
 import '../../Styles/GlobalStyles.css';
 
 function Guarda() {
+
+  
+
+
   return ( 
     <>
     <div className="wrapper">
