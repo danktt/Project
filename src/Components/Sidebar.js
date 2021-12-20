@@ -5,9 +5,17 @@ import { BsFillGearFill } from 'react-icons/bs';
 import { BsPersonCheckFill } from 'react-icons/bs';
 import { FaUserLock } from 'react-icons/fa';
 import { MdManageAccounts } from 'react-icons/md'
+import { PersonContext } from '../Contexts/Person';
+import { useContext } from 'react';
 
 
 function Sidebar(props) {
+
+
+    const { users } = useContext(PersonContext)
+    
+
+
   return(
    <>
         <div 
@@ -37,7 +45,7 @@ function Sidebar(props) {
                     <li> <a href="//#" className="nav-link text-white hove-item"> <i className="fa fa-bookmark"></i><span className="ms-2">Sistema</span> </a> </li>
                 </ul>
             <hr/>
-            <div className="dropdown"> <a href="//#" className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"> <img src="https://github.com/mdo.png" alt="" width="32" height="32" className="rounded-circle me-2"/> <strong> Gen Miranda </strong> </a>
+            <div className="dropdown"> <a href="//#" className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"> <img src="https://github.com/mdo.png" alt="" width="32" height="32" className="rounded-circle me-2"/> <strong> {users[0].name} </strong> </a>
                 <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
                     <li><a className="dropdown-item" href="///#"> <BsPersonCheckFill /> Atualizar Dados</a></li>
                     <li><a className="dropdown-item" href="//#">  <FaUserLock /> Atualizar Senha</a></li>

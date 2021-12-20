@@ -9,22 +9,26 @@ import FatosObs from "./Pages/FatosObs";
 import Chamadas from "./Pages/Chamadas";
 import Arranchamento from "./Pages/Arranchamento";
 import Aniversario from "./Pages/Aniversariantes";
+import PersonProvider from "./Contexts/Person";
 
 function App() {
   return (
+    <PersonProvider>
+
     <Router>
       <Routes>
+        <Route exact path="/" element={<Login />} />
+        <Route exact path="/home" element={<HomePage />} />
+        <Route exact path="/guarda" element={<Guarda />} />
+        <Route exact path="/helpdesk" element={<HelpDesk />} />
 
-        <Route exact path="/" element={<Login/>} />
-        <Route exact path ="/home" element={<HomePage/>} />
-        <Route exact path="/guarda" element={<Guarda/>} />
-        <Route exact path="/helpdesk" element={<HelpDesk/>} />
-        <Route exact path="/fatos-obs" element={<FatosObs/>} />
-        <Route exact path="/plano-chamada" element={<Chamadas/>} />
-        <Route exact path="/arranchamento" element={<Arranchamento/>} />
-        <Route exact path="/aniversariantes" element={<Aniversario/>} />
-      </Routes>  
+        <Route exact path="/fatos-obs" element={<FatosObs />} />
+        <Route exact path="/plano-chamada" element={<Chamadas />} />
+        <Route exact path="/arranchamento" element={<Arranchamento />} />
+        <Route exact path="/aniversariantes" element={<Aniversario />} />
+      </Routes>
     </Router>
+    </PersonProvider>
   );
 }
 
